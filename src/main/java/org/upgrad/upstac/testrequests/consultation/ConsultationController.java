@@ -55,7 +55,7 @@ public class   ConsultationController {
     public List<TestRequest> getForDoctor()  {
 
         //This method to return the list of test requests assigned to current doctor
-        
+
         User doctor = userLoggedInService.getLoggedInUser();
         return testRequestQueryService.findByDoctor(doctor);
     }
